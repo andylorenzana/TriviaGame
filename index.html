@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Trivia Game!\-->
+    <head>
+        <!--Required meta tags-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Added link to the jQuery Library -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <!--CSS-->
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+        <!--Google Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Orbitron|Teko" rel="stylesheet">
+
+        <title>Trivia Game</title>
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <header id="main-header">
+                <h1>FOOD FAVORITES </h1>
+                <h2>Trivia Game!</h2>
+            </header>
+
+            <div class="row justify-content-center" id="top-block">
+                <div class="col-10 col-md-6 col-lg-4">
+                    <button class="btn btn-primary btn-block" id="start"><strong>START</strong></button>
+                    <button class="btn btn-success btn-block" id="playAgain"><strong>PLAY AGAIN</strong></button>
+                    <span id="clock">Time Remaining: <span id="timeLimit"></span> Seconds</span>
+                </div>
+            </div>
+
+            <div class="row justify-content-center" id="question-block">
+                <div class="col-1 col-lg-2"></div>
+                <div class="col-auto">
+                    <p id="gamePhase"></p>
+                    <p id="question"></p>
+                    <p class="results" id="correct"></p>
+                    <p class="results" id="incorrect"></p>
+                    <p class="results" id="unanswered"></p>
+                </div>
+                <div class="col-1 col-lg-2"></div>
+            </div>
+
+            <div class="row justify-content-center" id="bottom-block">
+                <div class="col-8" id="choices"></div>
+            </div>
+        </div>
+
+        <!--Javascript-->
+        <script type="text/javascript" src="assets/javascript/app.js"></script>
+    </body>
+</html>
